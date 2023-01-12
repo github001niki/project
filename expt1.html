@@ -1,0 +1,38 @@
+<html><head>
+<link rel="stylesheet" href="expt2.css"/>
+</head>
+<body>
+    <button onclick="document.getElementById('id01').style.display='block'" style="width: auto;">login</button>
+    <div id="id01" class="modal">
+        <form class="modal-content animate">
+            <div class="image-container">
+                <span
+                 onclick="document.getElementById('id01').style.display='none'" class="close" title="close modal">
+                </span>
+                <img src="suman.jpg" alt="AVATAR" class="avatar">
+            </div>
+            <div class="container">
+                <label for="uname"><b>username:</b></label>
+                <input type="text" name="n1" id="n1" placeholder="enter name" required/>
+                <label for"psw" ><b>password</b></label>
+<input type="password" name="p1" id="p1" required/>
+<button type="submit">login</button><button type="reset"> clear</button>
+<label>
+    <input type="checkbox" checked="checked" name="rembere">remember me
+</label>
+<div class="=container" style ="background-color: black;">
+<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancel-btn">cancel</button><span class="psw" >forgot<a href="#">password/</a></span>
+</div>
+        </form>
+    </div>
+    <script>
+     var modal=document.getElementById('id01');
+     window.onclick=function(event)
+     {
+         if(event.target==modal)
+         {
+             modal.style.display='none';
+         }
+     }
+     </script>
+</body></html>
